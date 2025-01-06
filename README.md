@@ -167,6 +167,12 @@ out = filled3dBy( [ 1, 1, 3 ], constantFunction( void 0 ) );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-base/filled3d`][@stdlib/array/base/filled3d]</span><span class="delimiter">: </span><span class="description">create a filled three-dimensional nested array.</span>
+
 </section>
 
 <!-- /.related -->
@@ -197,7 +203,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -242,6 +248,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/array-base-filled3d-by/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-filled3d-by/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/array/base/filled3d]: https://github.com/stdlib-js/array-base-filled3d
+
+<!-- </related-links> -->
 
 </section>
 
