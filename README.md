@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-filled3d-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-filled3dBy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled3d-by@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var filled3dBy = require( 'path/to/vendor/umd/array-base-filled3d-by/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled3d-by@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.filled3dBy;
-})();
-</script>
+var filled3dBy = require( '@stdlib/array-base-filled3d-by' );
 ```
 
 #### filled3dBy( shape, clbk\[, thisArg] )
@@ -137,14 +131,9 @@ var cnt = ctx.count;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-constant-function@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled3d-by@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var constantFunction = require( '@stdlib/utils-constant-function' );
+var filled3dBy = require( '@stdlib/array-base-filled3d-by' );
 
 var out = filled3dBy( [ 1, 1, 3 ], constantFunction( 0.0 ) );
 // returns [ [ [ 0.0, 0.0, 0.0 ] ] ]
@@ -160,11 +149,6 @@ out = filled3dBy( [ 1, 3, 1 ], constantFunction( true ) );
 
 out = filled3dBy( [ 1, 1, 3 ], constantFunction( void 0 ) );
 // returns [ [ [ undefined, undefined, undefined ] ] ]
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -182,6 +166,12 @@ out = filled3dBy( [ 1, 1, 3 ], constantFunction( void 0 ) );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-base/filled3d`][@stdlib/array/base/filled3d]</span><span class="delimiter">: </span><span class="description">create a filled three-dimensional nested array.</span>
 
 </section>
 
@@ -213,7 +203,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -258,6 +248,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/array-base-filled3d-by/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-filled3d-by/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/array/base/filled3d]: https://github.com/stdlib-js/array-base-filled3d
+
+<!-- </related-links> -->
 
 </section>
 
